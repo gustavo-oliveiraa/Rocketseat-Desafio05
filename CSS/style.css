@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*root = escopo geral/ html geral*/
+
+:root {
+    --ff-heading: 'Epilogue', sans-serif;
+}
