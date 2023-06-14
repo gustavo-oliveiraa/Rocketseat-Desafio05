@@ -1,0 +1,18 @@
+Projeto 05 / De #F073 até #F0
+
+variaveis
+
+grid
+
+responsividade 
+
+animações/transições em css
+
+https://unsplash.com/pt-br  = sites de imagem gratuita
+
+https://fonts.google.com/
+
+
+escopo = header
+
+variaveis
