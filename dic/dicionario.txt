@@ -29,3 +29,30 @@ s = saturation
 l = lumience
 
 a = opacidade
+
+
+
+object-fit = encaixe o objeto
+
+
+****flex-direction
+
+
+width: fit-content; =  encaixe no conteudo
+
+
+transform =  faz transformações nos elementos
+
+transition = transição***
+
+
+
+@keyframes "nome" {
+  0% {
+
+  }
+
+  100% {
+    
+  }
+}
