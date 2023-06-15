@@ -1,4 +1,4 @@
-Projeto 05 / De #F073 até #F0
+Projeto 05 / De #F073 até #F084
 
 variaveis
 
@@ -16,3 +16,16 @@ https://fonts.google.com/
 escopo = header
 
 variaveis
+
+
+heading = textos grandes
+
+criar variaveis
+deixar a variavel no contexto do root (para ficarr disponivel em todos lugares)
+
+hsl(var(--hue), 22%, 20%);
+h = hue
+s = saturation
+l = lumience
+
+a = opacidade
