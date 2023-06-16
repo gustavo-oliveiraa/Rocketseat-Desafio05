@@ -45,6 +45,7 @@ header {
   font-family: var(--ff-heading);
 
   text-align: center;
+  animation: topdown 700ms;
 }
 
 header p {
@@ -68,6 +69,7 @@ header h1 {
 main {
   display: grid;
   gap: 3.2rem;
+  animation: downtop 700ms 350ms backwards;
 }
 
 .card {
@@ -95,7 +97,7 @@ main {
   bottom: 5.2rem;
   left: 2.8rem;
 
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   font-weight: 800;
 
   display: flex;
@@ -118,11 +120,6 @@ main {
   align-items: center;
 }
 
-header {
-  animation-name: topdown;
-  animation-duration: 700ms;
-}
-
 @keyframes topdown {
   0% {
     opacity: 0;
@@ -132,5 +129,57 @@ header {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 700px) {
+
+  :root {
+    --fs-heading: 5.6rem;
+  }
+  
+    .page {
+      max-width: 117rem;
+      padding: 0 5rem;   
+    }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 930px) {
+
+  main {
+    grid-template-areas: "A B B"
+    "C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
   }
 }
