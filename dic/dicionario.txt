@@ -98,7 +98,13 @@ forwards =
 
 
 
-grid = grelha (tem linhas e colunas) trabalha tanto no eixo Y quanto no X
+grid = grelha (grade) (tem linhas e colunas) trabalha tanto no eixo Y quanto no X
 
 grid-template-columns: ;
 
+
+grid-template-columns: 1fr 1fr; --> 1 fração = uma unidade flexivel
+
+
+
+filter = filtros no css
