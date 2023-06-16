@@ -81,6 +81,7 @@ main {
 .card img {
   height: 41.6rem;
   object-fit: cover;
+  /*filter: brightness(0.5) saturate(1.5);*/
 
   border-radius: 6px;
 
@@ -115,7 +116,7 @@ main {
 
   width: fit-content;
   height: 3.8rem;
-  
+
   display: inline-flex;
   align-items: center;
 }
@@ -133,12 +134,12 @@ main {
 }
 
 @keyframes downtop {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(15px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -149,11 +150,11 @@ main {
   :root {
     --fs-heading: 5.6rem;
   }
-  
-    .page {
-      max-width: 117rem;
-      padding: 0 5rem;   
-    }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
 
   main {
     grid-template-columns: 1fr 1fr;
@@ -164,7 +165,7 @@ main {
 
   main {
     grid-template-areas: "A B B"
-    "C C D";
+      "C C D";
   }
 
   main div:nth-child(1) {
