@@ -56,3 +56,49 @@ transition = transição***
     
   }
 }
+
+keyframes = pontos chaves dentro da animação
+
+@... = at(@) rule
+
+
+animation-fill-mode: forwards; = vai terminar com as propriedades do 100% (para frente)
+
+animation-direction: reverse; = faz a animação começar no 100% ate o 0%
+
+animation-iteration-count: infinite; = animação infinita
+
+
+animation-duration: 700ms;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-delay: 200ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-play-state: running; /*dentro do hover*/
+
+
+
+  main {
+  animation: downtop 700ms 350ms reverse backwards;
+}
+
+@keyframes downtop {
+  100%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+
+backwards  = coloque o ponto zero como propriedade padrao do elemento
+
+forwards = 
+
+
+
+grid = grelha (tem linhas e colunas) trabalha tanto no eixo Y quanto no X
+
+grid-template-columns: ;
+
